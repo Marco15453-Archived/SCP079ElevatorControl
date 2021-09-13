@@ -105,3 +105,7 @@ s_c_p079_elevator_control:
     Nuke: Nuke
     Scp049: SCP 0 4 9
 ```
+
+# Credits
+- Code by Me
+- Plugin Idea by Skillz
