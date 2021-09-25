@@ -13,7 +13,7 @@ namespace SCP079ElevatorControl
 
         public override string Name => "SCP079ElevatorControl";
         public override string Author => "Marco15453";
-        public override Version Version => new Version(1, 0, 0);
+        public override Version Version => new Version(1, 1, 0);
         public override Version RequiredExiledVersion => new Version(3, 0, 0);
 
         public Dictionary<string, ElevatorType> RoomNameToElevator = new Dictionary<string, ElevatorType> {
@@ -36,20 +36,16 @@ namespace SCP079ElevatorControl
         private PlayerHandler playerHandler;
         private SCP079Handler scp079Handler;
 
-        private CoroutineHandle updateCoroutine;
-
         public override void OnEnabled()
         {
             Instance = this;
             RegisterEvents();
-            if (SCP079ElevatorControl.Instance.Config.AutoUpdate) updateCoroutine = Timing.RunCoroutine(AutoUpdater.AutoUpdates());
             base.OnEnabled();
         }
 
         public override void OnDisabled()
         {
             UnregisterEvents();
-            Timing.KillCoroutines(updateCoroutine);
             base.OnDisabled();
         }
 

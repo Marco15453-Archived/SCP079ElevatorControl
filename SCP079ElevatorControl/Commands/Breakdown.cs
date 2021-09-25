@@ -29,7 +29,7 @@ namespace SCP079ElevatorControl.Commands
             
             if(!p.IsScp || p.Role != RoleType.Scp079)
             {
-                response = "You can only run this Command as SCO-079";
+                response = "You can only run this Command as SCP-079";
                 return false;
             }
 
