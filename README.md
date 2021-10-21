@@ -1,3 +1,4 @@
+# THIS PLUGIN HAS BEEN ARCHIVED
 # SCP-079 Elevator Control
 A complex plugin that allows SCP-079 to take down an Elevators for a specific Time with a simple command
 
